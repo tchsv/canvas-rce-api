@@ -52,6 +52,10 @@ docker run \
   instructure/canvas-rce-api
 ```
 
+```bash
+docker run --name rce -p 80:8888 -e STATSD_HOST=127.0.0.1 -e STATSD_PORT=8125 -e ECOSYSTEM_KEY="astringthatisactually32byteslong" -e ECOSYSTEM_SECRET="astringthatisactually32byteslong"
+```
+
 ### TLS
 
 To ensure that credentials and payloads are encrypted over the wire, `https`
